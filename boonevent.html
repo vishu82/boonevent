@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boon Event Management
+    </title>
+    <style>
+        .body{
+            background-image: url('BOON.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #blink{
+            font-size: 40px;
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body class="body">
+    <p id="blink">
+        COMING SOON
+    </p>
+    <script>
+        var blink = document.getElementById('blink');
+        setInterval(function(){
+            blink.style.opacity = (blink.style.opacity == 0?1:0);
+        },1000)
+    </script>
+</body>
+</html>
